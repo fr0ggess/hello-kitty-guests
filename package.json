@@ -1,0 +1,17 @@
+{
+  "name": "hello-kitty-guests",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Лидия Лемешенко lidiya.lemeshenko@gmail.com",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.1.1"
+  }
+}
