@@ -1,5 +1,12 @@
 const express = require('express')
-const multer = require('multer')
 const path = require('path')
+const multer = require('multer')
+
+const app = express();
+const PORT = 3000;
 
 app.use(express.static('public'));
+
+app.listen(PORT, () => {
+    console.log(`Сервер запущен: http://localhost:${PORT}`);
+});
