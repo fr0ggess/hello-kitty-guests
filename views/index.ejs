@@ -6,10 +6,12 @@
     <title>Hello Kitty Guests</title>
     <link rel="icon" type="image/png" href="/images/logo.png">
 
-    <style rel="stylesheet" href="/css/main.css"></style>
+    <!-- Стили -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/error.css">
 </head>
 <body>
-    <% include /blocks/header.ejs %>
+    <%- include('./blocks/header.ejs') %>
     <main></main>
     <script src="/js/client.js"></script>
 </body>
