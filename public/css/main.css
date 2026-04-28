@@ -1,0 +1,58 @@
+body {
+    background: #FFF2F5;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Overpass Mono';
+}
+
+section {
+    margin-top: 45px;
+    border-radius: 20px;
+    border: 1px solid #636466;
+} 
+
+h1 {
+    font-family: 'Pixelify Sans';
+    margin: 0;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.coral {
+    color: #CE3A69;
+}
+
+/* Стили для header */ 
+.header-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.header-title {
+    margin-bottom: 15px;
+    color: #F6648E;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.header-nav-link {
+    color: #BA68C8;
+}
+
+.header-nav-link:hover {
+    color: #F6648E;
+}

@@ -1,3 +1,6 @@
-# hello-kitty-guests
+# 🎀 hello-kitty-guests
 
 ПРОЕКТ НЕ ЗАКОНЧЕН!
+
+## 🌸 Планируемые доработки
+- 
