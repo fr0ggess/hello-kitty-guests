@@ -9,12 +9,17 @@ main {
 
 section {
     margin: auto;
-    max-width: 1500px;
+    margin-bottom: 30px;
+    padding: 25px;
+    max-width: 1600px;
     border-radius: 20px;
     border: 1px solid #636466;
-    background-color: #DDA0DD;
-    padding: 25px;
+    background: #DDA0DD;
 } 
+
+section:last-of-type {
+    margin-bottom: 0px;
+}
 
 .container {
     display: flex;
@@ -32,13 +37,14 @@ section {
 h1 {
     font-family: 'Pixelify Sans';
     margin: 0;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 800;
 }
 
 h2 {
     margin: 0;
     margin-bottom: 15px;
+    font-size: 30px;
     color: #5D3A5D;
 }
 
@@ -52,11 +58,20 @@ a {
 
 p {
     margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
     color: #4A3B4A;
+    
 }
 
 p:last-child {
     margin-bottom: 0;
+}
+
+/* Main */
+.highlighting {
+    color: #CE3A69;
+    font-weight: 800;
 }
 
 /* Header */ 
@@ -78,7 +93,7 @@ header .container {
 .header-navigation {
     display: flex;
     gap: 40px;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 600;
 }
 

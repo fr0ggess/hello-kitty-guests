@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,12 +36,34 @@
                     <!-- Пагинация -->
                     <div class="swiper-pagination"></div>
             </div>
-                <p>Добро пожаловать в мир моей любимой игры Hello Kitty Island Adventure — уютного приключения, которое предлагает отправиться в путешествие по огромному открытому миру вместе с Hello Kitty и её друзьями. Игра была выпущена 28 июля 2023 года как эксклюзив для подписочного сервиса Apple Arcade, где получила признание "Игры года". Успех проекта позволил ему выйти за пределы мобильных устройств: 30 января 2025 года игра добралась до Nintendo Switch и PC в Steam, а 5 августа того же года вышла и на PlayStation 5. В Hello Kitty Island Adventure предстоит взять на себя роль путешественника и помочь Hello Kitty и её друзьям восстановить заброшенный остров.</p>
+                <p>Добро пожаловать в мир моей любимой игры <span class="highlighting">Hello Kitty Island Adventure</span> — уютного приключения, которое предлагает отправиться в путешествие по огромному открытому миру вместе с Hello Kitty и её друзьями. Игра была выпущена 28 июля 2023 года как эксклюзив для подписочного сервиса Apple Arcade, где получила признание "Игры года". Успех проекта позволил ему выйти за пределы мобильных устройств: 30 января 2025 года игра добралась до Nintendo Switch и PC в Steam, а 5 августа того же года вышла и на PlayStation 5. В Hello Kitty Island Adventure предстоит взять на себя роль путешественника и помочь Hello Kitty и её друзьям восстановить заброшенный остров.</p>
                 <p>В Hello Kitty Island Adventure предстоит взять на себя роль путешественника и помочь Hello Kitty и её друзьям восстановить заброшенный остров. Геймплей представляет собой гармоничное сочетание исследования, решения головоломок и крафта. Игроки смогут вволю заниматься платформингом, готовить виртуальные угощения, ловить рыбу и собирать коллекционных существ по всему острову. Особенностью игры является система дружбы с персонажами Sanrio — чем ближе вы общаетесь с ними, тем больше новых заданий и секретов открывается — а также наличие многопользовательского режима, позволяющего объединяться с друзьями для совместных приключений и строительства.</p>
             </div>
         </section>
+
+        <section id="upload-form" class="upload-form-section">
+            <div class="container">
+                <h2>Загрузи свои скриншоты!</h1>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="screenshot" accept="image/*" required>
+                    <button type="submit">Загрузить</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>Галерея</h2>
+                <% if (images && images.length) { %>
+                    <% images.forEach(img => { %>
+                        <img src="/uploads/<%= img %>" alt="Скриншот" width="200">
+                    <% }) %>
+                <% } else { %>
+                    <p>Нет загруженных скриншотов</p>
+                <% } %>
+            </div>
+        </section>
     </main>
-    <script src="/js/client.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/js/init-swiper.js"></script>
 </body>

@@ -1,1 +1,47 @@
-/* отдельный файл, так как планируется немного другая стилистика страницы */
+/* отдельный файл, так как планировалась немного другая стилистика страницы */
+body {
+    background: #000000;
+}
+
+main {
+    margin: 0;
+}
+
+section {
+    border: none;
+    background: none;
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+    color: #CF8AC3;
+}
+
+h2 {
+    font-family: 'Pixelify Sans';
+    font-size: 60px;
+    color: #FF0000;
+}
+
+p {
+    font-size: 25px;
+    color: #CF8AC3;
+}
+
+.error-image {
+    max-width: 550px;
+    width: 100%;
+}
+
+.error-home-link {
+    padding: 25px;
+    font-size: 20px;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    border-radius: 10px;
+}
