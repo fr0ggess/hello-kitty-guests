@@ -1,14 +1,6 @@
 body {
     background: #FFF2F5;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Overpass Mono';
-}
 
 section {
     margin: auto;
@@ -18,6 +10,15 @@ section {
     border: 1px solid #636466;
     background-color: #DDA0DD;
 } 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Overpass Mono';
+}
 
 h1 {
     font-family: 'Pixelify Sans';
