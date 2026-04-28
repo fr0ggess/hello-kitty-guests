@@ -1,23 +1,32 @@
 body {
     background: #FFF2F5;
+    margin: 0;
+}
+
+main {
+    margin: 45px 10px;
 }
 
 section {
     margin: auto;
-    margin-top: 45px;
     max-width: 1500px;
     border-radius: 20px;
     border: 1px solid #636466;
     background-color: #DDA0DD;
+    padding: 25px;
 } 
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     font-family: 'Overpass Mono';
+}
+
+.container:not(:first-child) {
+    gap: 15px;
 }
 
 h1 {
@@ -25,6 +34,12 @@ h1 {
     margin: 0;
     font-size: 45px;
     font-weight: 600;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #5D3A5D;
 }
 
 a {
@@ -35,7 +50,21 @@ a {
     color: #CE3A69;
 }
 
-/* Стили для header */ 
+p {
+    margin: 15px 0;
+    color: #4A3B4A;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Header */ 
+header .container {
+    align-items: center;
+    text-align: center;
+}
+
 .header-logo {
     width: 200px;
     height: 200px;
@@ -59,4 +88,55 @@ a {
 
 .header-nav-link:hover {
     color: #F6648E;
+}
+
+/* Swiper */
+.swiper {
+    width: 100%;
+    height: auto; 
+    padding-bottom: 50px;
+    margin: 15px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 0;      
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    background: none;   
+    width: auto;            
+    height: auto;
+    opacity: 0.5;            
+    font-size: 18px;        
+    margin: 0 8px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2); 
+    font-size: 22px;
+}
+
+.swiper-pagination-bullet:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
 }
