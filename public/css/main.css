@@ -11,9 +11,12 @@ body {
 }
 
 section {
+    margin: auto;
     margin-top: 45px;
+    max-width: 1500px;
     border-radius: 20px;
     border: 1px solid #636466;
+    background-color: #DDA0DD;
 } 
 
 h1 {
