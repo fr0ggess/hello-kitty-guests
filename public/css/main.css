@@ -158,6 +158,17 @@ header .container {
 
 /* ДОПИСАТЬ ДЛЯ ФОРМЫ И ГАЛЕРЕИ */
 
+/* Upload-form */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: auto;
+    gap: 20px;
+    background: #F8F8FF;
+    border-radius: 10px;
+    border: 1px solid #000000
+}
 
 
 /* ДОПИСАТЬ */
