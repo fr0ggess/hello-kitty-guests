@@ -45,3 +45,17 @@ p {
     border: 1px solid #FF0000;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 30px 10px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+}

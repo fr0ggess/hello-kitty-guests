@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loop: true, // Бесконечная прокрутка
 
      autoplay: {
-        delay: 3000, // Пауза между слайдами (в мс)
+        delay: 3000, // Пауза между слайдами 
         disableOnInteraction: false, // Продолжать после ручного перелистывания
     },
 
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     pagination: {
         el: '.swiper-pagination',
         clickable: true, // Кружочки можно нажимать
+        //https://yadi.sk/d/MI_bGbULOfDo0w
         renderBullet: function(index, className) {
             // Цветочек вместо кружочка
             return '<span class="' + className + '">🎀</span>';
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // },
 
     breakpoints: {
-    // Для ширины экрана >= 768px
+        // Для ширины экрана >= 768px
         768: {
             slidesPerView: 2,
             spaceBetween: 20
