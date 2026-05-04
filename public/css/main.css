@@ -167,7 +167,8 @@ header .container {
     gap: 20px;
     background: #F8F8FF;
     border-radius: 10px;
-    border: 1px solid #000000
+    border: 1px solid #000000;
+    width: 80%;
 }
 
 

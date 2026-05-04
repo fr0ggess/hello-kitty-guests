@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Kitty Island</title>
-    <link rel="icon" type="image/png" href="/images/icon.webp">
-
-    <!-- Стили -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/main.css">
-
-    <!-- Шрифты -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
-</head>
+    <%- include('./blocks/head.ejs') %>
 <body>
     <%- include('./blocks/header.ejs') %>
     <main>
@@ -46,7 +31,9 @@
                 <h2>Загрузи свои скриншоты!</h1>
                 <form  action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
                     <input type="file" name="screenshot" accept="image/*" required>
-                    <button type="submit">Загрузить</button>
+                    <div class="">
+                        <button type="submit">Загрузить</button>
+                    </div>
                 </form>
             </div>
         </section>
