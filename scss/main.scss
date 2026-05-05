@@ -1,0 +1,226 @@
+// Не особо разбираюсь в SCSS, решила для обучения это сделать 
+
+// Bootstrap 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+
+body {
+    background: #FFF2F5;
+    margin: 0;
+}
+
+main {
+    margin: 45px 10px;
+}
+
+section {
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 25px;
+    max-width: 1600px;
+    border-radius: 20px;
+    border: 1px solid #636466;
+    background: #DDA0DD;
+
+    //& ссылка на родителя (section)
+    &last-of-type {
+        margin-bottom: 0px;
+    }
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    font-family: 'Overpass Mono';
+
+    &:not(:first-child) {
+        gap: 15px;
+    }
+}
+
+h1 {
+    font-family: 'Pixelify Sans';
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #5D3A5D;
+}
+
+a {
+    text-decoration: none;
+}
+
+.coral {
+    color: #CE3A69;
+}
+
+p {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4A3B4A;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+// Main 
+.highlighting {
+    color: #CE3A69;
+    font-weight: 800;
+}
+
+// Header
+header  {
+    .container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-title {
+        margin-bottom: 15px;
+        color: #F6648E;
+    }
+
+    .header-navigation {
+        display: flex;
+        gap: 40px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .header-nav-link {
+        color: #BA68C8;
+
+        &:hover {
+            color: #F6648E;
+        }
+    }
+}
+
+
+
+// Swiper
+.swiper {
+    width: 100%;
+    height: auto; 
+    padding-bottom: 50px;
+    margin: 15px 0;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 0;      
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+        background: none;   
+        width: auto;            
+        height: auto;
+        opacity: 0.5;            
+        font-size: 18px;        
+        margin: 0 8px;
+        transition: all 0.2s ease;
+        display: inline-block;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        transform: scale(1.2); 
+        font-size: 22px;
+    }
+
+    .swiper-pagination-bullet:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+
+
+// ДОПИСАТЬ ДЛЯ ФОРМЫ И ГАЛЕРЕИ 
+
+// Upload-form 
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: auto;
+    gap: 20px;
+    background: #F8F8FF;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    width: 80%;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 30px 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .header-navigation {
+        font-size: 18px;
+    }
+
+    .header-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .swiper { 
+        margin: 5px 0;
+    }
+}

@@ -32,25 +32,25 @@
         <section id="upload" class="upload-section">
             <div class="container">
                 <h2>Загрузи свои скриншоты!</h1>
-                <form  action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+                <!-- <form  action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
                     <input type="file" name="screenshot" accept="image/*" required>
-                    <div class="">
+                    <div class="d-flex justify-content-center">
                         <button type="submit">Загрузить</button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </section>
 
         <section id="gallery" class="gallery-section">
             <div class="container">
                 <h2>Галерея</h2>
-                <% if (images && images.length) { %>
+                <!-- <% if (images && images.length) { %>
                     <% images.forEach(img => { %>
                         <img src="/uploads/<%= img %>" alt="Скриншот" width="200">
                     <% }) %>
                 <% } else { %>
                     <p>Нет загруженных скриншотов</p>
-                <% } %>
+                <% } %> -->
             </div>
         </section>
     </main>
