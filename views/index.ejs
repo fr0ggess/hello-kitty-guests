@@ -29,15 +29,18 @@
             </div>
         </section>
 
+        <!-- Здесь использовала bootstrap для обучения +чтобы не придумывать классы для div -->
         <section id="upload" class="upload-section">
             <div class="container">
                 <h2>Загрузи свои скриншоты!</h1>
                 <form  action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
-                    <label for="screenshotInput" class="custom-file-upload">Выберите файл
+                    <div class="d-flex justify-content-start align-items-center gap-3">
+                    <label for="screenshotInput" class="custom-file-upload gradient-vertical">Выберите файл
                         <input type="file" id="screenshotInput" name="screenshot" accept="image/*" required>
                     </label>
+                    </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit">Загрузить</button>
+                        <button type="submit" class="gradient-vertical">Загрузить</button>
                     </div>
                 </form>
             </div>

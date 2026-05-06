@@ -81,6 +81,10 @@ p {
     
 }
 
+.gradient-vertical {
+    background-image: linear-gradient(135deg, #f48fb1, 0%, #ce93d8 50%, #ef9a9a 100%);
+}
+
 // Main 
 .highlighting {
     color: #CE3A69;
@@ -183,14 +187,28 @@ header  {
     flex-direction: column;
     padding: 25px;
     margin: auto;
+    width: 80%;
     gap: 20px;
     background: #F8F8FF;
     border-radius: 10px;
     border: 1px solid #000000;
-    width: 80%;
+    background: #E2C6FF;
 
+    .custom-file-upload, button {
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    input#screenshotInput {
+        display: none;
+    }
     
 }
+
+
 
 
 
