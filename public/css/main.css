@@ -5120,7 +5120,16 @@ header .header-nav-link:hover {
   flex-direction: column;
   gap: 10px;
 }
-#upload .upload-form #dropZone .camera-img {
+#upload .upload-form #dropZone .drop-image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  gap: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+#upload .upload-form #dropZone .drop-image .camera-img {
   height: 80px;
   width: 100px;
 }
@@ -5156,9 +5165,8 @@ header .header-nav-link:hover {
   #upload .upload-form {
     width: 50%;
   }
-  #upload .upload-form #dropZone .camera-img {
-    height: 60px;
-    width: 80px;
+  #upload .upload-form #dropZone .drop-image {
+    display: none;
   }
 }
 

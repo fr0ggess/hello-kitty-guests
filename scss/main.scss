@@ -216,9 +216,19 @@ header  {
             flex-direction: column;
             gap: 10px;
 
-            .camera-img {
-                height: 80px;
-                width: 100px;
+            .drop-image {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 40px;
+                gap: 10px;
+                border: 1px solid #000000;
+                border-radius: 5px;
+
+                .camera-img {
+                    height: 80px;
+                    width: 100px;
+                }
             }
         }
 
@@ -266,9 +276,8 @@ header  {
         .upload-form {
             width: 50%;
 
-            #dropZone .camera-img {
-                height: 60px;
-                width: 80px;
+            #dropZone .drop-image {
+                display: none;
             }
         }
     }
