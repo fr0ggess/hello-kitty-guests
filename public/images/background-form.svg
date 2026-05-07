@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="180" height="140" rx="30" fill="#FFF3E0" stroke="#FFE0B2" stroke-width="2" />
+  <rect x="25" y="25" width="150" height="110" rx="20" fill="none" stroke="#FFCCBC" stroke-width="2" stroke-dasharray="6,6" />
+  <g stroke="#FFD180" stroke-width="3" stroke-linecap="round" opacity="0.4">
+    <path d="M40,40 L30,30" />
+    <path d="M160,40 L170,30" />
+    <path d="M40,120 L30,130" />
+    <path d="M160,120 L170,130" />
+  </g>
+</svg>

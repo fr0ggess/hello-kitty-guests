@@ -3,9 +3,11 @@
 // Bootstrap 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark"; // Для BS 5.3+
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/root";
 
 @import "../node_modules/bootstrap/scss/utilities/api";
 
@@ -81,9 +83,14 @@ p {
     
 }
 
-.gradient-vertical {
-    background-image: linear-gradient(135deg, #f48fb1, 0%, #ce93d8 50%, #ef9a9a 100%);
+.gradient-white {
+    background-image: linear-gradient(135deg, #FFFFFF 0%, #FDDDE6 100%);
 }
+
+.gradient-blue {
+    background: linear-gradient(135deg, #E0BBE4 0%, #B4EBF0 100%);
+}
+
 
 // Main 
 .highlighting {
@@ -182,36 +189,45 @@ header  {
 // ДОПИСАТЬ ДЛЯ ФОРМЫ И ГАЛЕРЕИ 
 
 // Upload-form 
-.upload-form {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    margin: auto;
-    width: 80%;
-    gap: 20px;
-    background: #F8F8FF;
-    border-radius: 10px;
-    border: 1px solid #000000;
-    background: #E2C6FF;
+#upload {
+    background-image: url('../images/background-island.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .custom-file-upload, button {
-        padding: 10px;
-        border: 1px solid #000000;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 15px;
-    }
+    .upload-form {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        width: 40%;
+        gap: 20px;
+        border-radius: 10px;
 
-    input#screenshotInput {
-        display: none;
+        .custom-file-upload, button {
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #dropZone {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .camera-img {
+                height: 80px;
+                width: 100px;
+            }
+        }
+
+        input#screenshotInput {
+            display: none;
+        }
+        
     }
-    
 }
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
     main {
@@ -244,5 +260,16 @@ header  {
 
     .swiper { 
         margin: 5px 0;
+    }
+
+    #upload {
+        .upload-form {
+            width: 50%;
+
+            #dropZone .camera-img {
+                height: 60px;
+                width: 80px;
+            }
+        }
     }
 }
